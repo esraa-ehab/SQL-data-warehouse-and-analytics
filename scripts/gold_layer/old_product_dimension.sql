@@ -12,7 +12,7 @@ SELECT
     , pi.prd_cost AS product_cost
     , pi.prd_line AS product_line
     , pi.prd_start_dt AS start_date
-    , pi.prd_end_dt
+    , pi.prd_end_dt AS end_date
 FROM silver.crm_product_info AS pi
 LEFT JOIN silver.erp_px_cat AS pc
 ON pi.cat_id = pc.id
