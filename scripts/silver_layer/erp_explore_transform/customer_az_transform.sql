@@ -12,6 +12,6 @@ SELECT
     , CASE 
         WHEN UPPER(TRIM(REPLACE(REPLACE(gen, CHAR(13), ''), CHAR(10), ''))) IN ('F', 'FEMALE') THEN 'Female'
         WHEN UPPER(TRIM(REPLACE(REPLACE(gen, CHAR(13), ''), CHAR(10), ''))) IN ('M', 'MALE') THEN 'Male'
-        ELSE 'Unkown'
+        ELSE 'Unknown'
     END AS gen
 FROM bronze.erp_customer
