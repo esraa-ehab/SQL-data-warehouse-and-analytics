@@ -65,6 +65,13 @@ What I’d like viewers to notice
 
 ---
 
+## Pipeline Orchestration
+- The full ETL pipeline is executed via `pipeline_scripts/master_script.sql`, which runs:
+Database intialization → Bronze (raw ingestion) → Silver (cleaning & transformations) → Gold (analytics views)
+in a fully reproducible sequence, without external scripting.
+
+---
+
 ## Prerequisites
 
 - A SQL Server instance (local or remote) compatible with the T-SQL features used here.
